@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobilidade Urbana</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Mobilidade Urbana</h1>
+        <p>Encontre a melhor rota para seus deslocamentos</p>
+    </header>
+    
+    <main>
+        <div class="controls">
+            <div class="input-group">
+                <label for="startPoint">Ponto de Partida:</label>
+                <input type="text" id="startPoint" placeholder="Digite um endereço ou local">
+                <button id="searchStartPoint">Buscar</button>
+                <button id="setStartOnMap" class="secondary">Definir no Mapa</button>
+                <button id="useMyLocation" class="secondary">Usar Minha Localização</button>
+            </div>
+            <div class="input-group">
+                <label for="destination">Destino:</label>
+                <input type="text" id="destination" placeholder="Digite um endereço ou local">
+                <button id="searchDestination">Buscar</button>
+                <button id="setDestOnMap" class="secondary">Definir no Mapa</button>
+            </div>
+            <div class="button-group">
+                <button id="calculateRoute">Calcular Rota</button>
+                <button id="clearRoute" class="secondary">Limpar Tudo</button>
+            </div>
+        </div>
+        
+        <div class="status" id="status">
+            Defina o ponto de partida e o destino para calcular a rota
+        </div>
+
+        <div style="text-align: center;">
+            <label for="destination">Meio de locomoção:</label><br>
+            <button id="calculateRoute" onclick="window.location.href='bicicleta.html'">Bicicleta</button>
+            <button id="calculateRoute" onclick="window.location.href='carro.html'">Carro</button>
+            <button id="calculateRoute" onclick="window.location.href='moto.html'">Moto</button>
+            <button id="calculateRoute" onclick="window.location.href='caminhada.html'">Caminhada</button>
+            <button id="calculateRoute" onclick="window.location.href='onibus.html'">Ônibus</button>
+            <button id="calculateRoute" onclick="window.location.href='metro.html'">Metrô</button>
+        </div>
+
+        <div id="map-container">
+            <div id="map"></div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>© 2023 Mobilidade Urbana - Todos os direitos reservados</p>
+            <p>Desenvolvido para melhorar seus deslocamentos diários</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
