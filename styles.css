@@ -1,8 +1,9 @@
 :root {
-    --primary-color: #4285F4;
+    --primary-color: #87a2b9; /* Alterado para cinza */
     --secondary-color: #f1f1f1;
     --text-color: #333;
     --light-text: #777;
+    --button-hover: #66849b; /* Cor para hover do botão primário */
 }
 
 body {
@@ -16,7 +17,7 @@ body {
 }
 
 header {
-    background-color: var(--primary-color);
+    background-color: #4285F4; /* Mantido azul para o header */
     color: white;
     padding: 20px 15px;
     text-align: center;
@@ -48,7 +49,7 @@ main {
 }
 
 #map {
-    height: 500px; /* Altura aumentada */
+    height: 500px;
     width: 100%;
     z-index: 0;
 }
@@ -104,7 +105,7 @@ button {
 }
 
 button:hover {
-    background-color: #3367D6;
+    background-color: var(--button-hover);
 }
 
 button.secondary {
@@ -129,7 +130,7 @@ button.secondary:hover {
 }
 
 footer {
-    background-color: var(--primary-color);
+    background-color: #4285F4; /* Mantido azul para o footer */
     color: white;
     padding: 15px;
     text-align: center;
